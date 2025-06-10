@@ -59,7 +59,8 @@ This will:
 ### 3. Start Training
 
 ```bash
-nnUNetv2_train -d 503 -c 2d -f 0
+nnUNetv2_train -d 503 -c 2d -f 0 --trainer nnUNetTrainer --disable_mixed_precision
+
 ```
 
 This will begin training a 2D nnU-Net model for liver segmentation on CPU or GPU (depending on your setup).
